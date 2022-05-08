@@ -1,0 +1,47 @@
+SELECT/DELETE
+FROM
+WHERE
+[ GROUP BY
+  HAVING  
+  ORDER BY ]
+
+'ANY' == 'IN'
+NOT IN
+'= ANY' == 'EXISTS'
+'IS' == '='
+NOT IS
+
+EXCEPT \ (AS)
+INTERSECT /\ (AS)
+UNION      U (AS)
+UNION ALL    (AS)
+DISTINCT
+EXISTS
+LIKE --> == WHERE but for chrs with regex
+
+COUNT, MIN, MAX, AVG, SUM
+AND, OR, NOT
+NULL
+
+JOIN
+  NATURAL JOIN or explicitly:
+    FROM A
+    (INNER)o(LEFT/RIGHT/FULL/OUTER) JOIN
+    B ON A.x = B.x
+    
+DELETE FROM A where x..
+
+INSERT/UPDATE
+  - INSERT INTO A ( x, y , z ) {VALUES ( '' , '' , '' )/SELECT}
+  - UPDATE A SET x = {''/SELECT} WHERE y = ''
+
+A {
+  ..
+  FOREIGN KEY(x) REFERENCES B(y)
+}
+
+VIEW:
+  create view C ( x , y , z ) as
+  SELECT
+  FROM
+  WHERE

@@ -1,0 +1,25 @@
+<script>
+
+var show_regex_match = new function() {
+
+  this.regex = new RegExp ( /ab+/y );
+  
+  // this.regex = new RegExp ( /ab+/ ); // work well but doesn't iterate on itself on next indices
+  
+  // this.regex = /ab+/y ; // work well
+  
+  // * if you don't have to use special modifiers maybe also "ab+" can work for you
+  
+  this.string = 'ababbabbb';
+  
+  this.match = function() {
+  
+      alert ( this.string.match ( this.regex ) );
+      
+      // alert ( this.regex.test ( this.string ) ) ; // work also with this.regex = /ab+/y ;
+  }
+}
+
+</script>
+
+<button type=button onClick="show_regex_match.match()" >MATCH</button>

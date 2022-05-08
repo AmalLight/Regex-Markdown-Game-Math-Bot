@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Sympy
+Terminal=true
+Exec=xfce4-terminal --title=Sympy --command=sympy
+Icon=/home/kaumi/my_software/python/sympy/img/img.png
